@@ -3,16 +3,9 @@ html {
   font-family: 'Libre Baskerville', serif; /* this should be the rest of the output you got from Google Fonts */
 }
 
-#headshot {
-	position: absolute;
-	top: 0;
-  right: 0;
-}
-
 h1 {
   font-size: 60px;
   text-align: center;
-  padding-top: 300px
 }
 
 p,
@@ -20,4 +13,6 @@ li {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
