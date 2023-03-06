@@ -3,6 +3,12 @@ html {
   font-family: 'Libre Baskerville', serif; /* this should be the rest of the output you got from Google Fonts */
 }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 body {
   background-color: black;
   color: white;
