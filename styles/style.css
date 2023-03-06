@@ -15,3 +15,8 @@ p, li, ul {
   padding-left: 50px;
   padding-right: 50px;
 }
+
+body {
+  background-color: black;
+  color: white;
+}
