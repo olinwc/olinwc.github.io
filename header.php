@@ -1,8 +1,7 @@
 <header>
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="acronyms.html">Acronyms</a>
   </nav>
 </header>
