@@ -3,6 +3,12 @@ html {
   font-family: 'Libre Baskerville', serif; /* this should be the rest of the output you got from Google Fonts */
 }
 
+header {
+	background-color: #333;
+	color: white;
+  padding: 20px;
+}
+
 nav {
   display: inline-block;
 }
