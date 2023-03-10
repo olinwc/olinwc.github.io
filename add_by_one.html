@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Increment a number by 1</title>
+  </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville" rel="stylesheet">
+    <title>Increment a number by 1</title>
+    <meta name="description" content="Increments a number by 1">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        &hyphen;
+        <a href="about.html">About Me</a>
+        &hyphen;
+        <a href="acronyms.html">Acronyms</a>
+        &hyphen;
+        <a href="add_by_one.html">Add By One</a>
+      </nav>
+    </header>
+    <label for="number">Enter a number:</label>
+    <input type="number" id="number" name="number">
+    <button onclick="increment()">Increment</button>
+    <p id="result"></p>
+
+    <script>
+      function increment() {
+        // Get the input field value
+        var input = document.getElementById("number").value;
+
+        // Increment the number by 1
+        var result = parseInt(input) + 1;
+
+        // Display the result
+        document.getElementById("result").innerHTML = "The result is: " + result;
+      }
+    </script>
+  </body>
+</html>
