@@ -25,5 +25,15 @@ submit_button.addEventListener('click', () => {
   }
 
   const output_element = document.getElementById('output');
-  output_element.innerHTML = data;
+
+  const str_array = []
+  for (let i = 0; i < data.length; i++)
+  {
+    for (let j = 0; j < columns.length; j++)
+    {
+      str_array.push(data[i][headers[j]])
+    }
+  }
+
+  output_element.innerHTML = str_array.join(" ");
 });
