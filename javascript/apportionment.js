@@ -2,7 +2,7 @@ const csv_data_text_area = document.getElementById('csv-data');
 const submit_button = document.getElementById('submit-btn');
 submit_button.addEventListener('click', () => {
   const csv_data = csv_data_text_area.value;
-  
+
   // Split the CSV data into rows
   const rows = csv_data.split('\n');
 
@@ -24,5 +24,6 @@ submit_button.addEventListener('click', () => {
     data.push(rowData);
   }
 
-  console.log(data);
+  const output_element = document.getElementById('output');
+  output_element.innerHTML = data;
 });
