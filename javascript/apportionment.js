@@ -29,7 +29,7 @@ submit_button.addEventListener('click', () => {
   const str_array = []
   for (let i = 0; i < data.length; i++)
   {
-    for (let j = 0; j < columns.length; j++)
+    for (let j = 0; j < headers.length; j++)
     {
       str_array.push(data[i][headers[j]])
     }
