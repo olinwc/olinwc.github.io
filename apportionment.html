@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville" rel="stylesheet">
-    <title>Increment a number by 1</title>
-    <meta name="description" content="Increments a number by 1">
+    <title>Apportionment</title>
+    <meta name="description" content="Process CSV data using various apportionment methods">
   </head>
   <body>
     <header>
@@ -27,22 +27,6 @@
         <a href="apportionment.html">Apportionment</a>
       </nav>
     </header>
-    <label for="number">Enter a number:</label>
-    <input type="number" id="number" name="number">
-    <button onclick="increment()">Increment</button>
-    <p id="result"></p>
-
-    <script>
-      function increment() {
-        // Get the input field value
-        var input = document.getElementById("number").value;
-
-        // Increment the number by 1
-        var result = parseInt(input) + 1;
-
-        // Display the result
-        document.getElementById("result").innerHTML = "The result is: " + result;
-      }
-    </script>
+    <textarea id="csv-data"></textarea>
   </body>
 </html>
