@@ -9,15 +9,36 @@ submit_button.addEventListener('click', () => {
   // Extract the headers from the first row
   const headers = rows[0].split(',');
 
+  // Column with state names
+  state_index = 0;
+  // Column with population numbers
+  pop_index = 0;
+
+  for (let i = 0; i < headers.length; i++)
+  {
+    if (headers[i] == "State")
+    {
+      state_index = i;
+      console.log("State Found!");
+    }
+    else if (headers[i] == "Population")
+    {
+      pop_index = i;
+      console.log("Population Found!");
+    }
+  }
+
   // Create an array of objects representing the data
   const data = [];
 
-  for (let i = 1; i < rows.length; i++) {
+  for (let i = 1; i < rows.length; i++)
+  {
     const columns = rows[i].split(',');
 
     const rowData = {};
 
-    for (let j = 0; j < columns.length; j++) {
+    for (let j = 0; j < columns.length; j++)
+    {
       rowData[headers[j]] = columns[j];
     }
 
